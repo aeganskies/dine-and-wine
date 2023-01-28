@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Dine and Wine Sweden</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro" tabindex="0">Home</a></li>
+							<li><a href="#one" tabindex="1">How it works</a></li>
+							<li><a href="#two" tabindex="2">Dine and Wine Recommendations</a></li>
+							<li><a href="#three" tabindex="3">Blog</a></li>
+							<li><a href="#four" tabindex="4">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up"  tabindex="5">
+						<div class="inner">
+							<h1>Dine and Wine Sweden</h1>
+							<img src="images/logo.jpg" alt="mypicture" width =250 height=250 class="helomyimage">
+							<br><br>
+							<p > The best and closest wine for your meal!</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Learn more</a></li>
+								<li><a href="#four" target="_blank" class="button scrolly">Sign up</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights"  tabindex="6">
+						<section>
+							<a target="_blank" class="image"><img src="images/red-wine.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Food-wine pairing</h2>
+									<p><b>
+										We will match your meal with the best wine for a succulent dine and wine experience.
+										With the use of our fine-tuned algorithm we will recommend three types of wine for your meal. 
+										Our algorithm has been trained with Natural Language Processing and matches the characteristics 
+										of food with wine.
+										<br><br>The algorithm quantifies the non-aroma and aroma properties of the meal and matches 
+										it with wines along the same dimensions. The ingredients of a meal are used to create 
+										a flavor profile. For example, a meal containing a hotdog, relish, pickles, and chili pepper 
+										has a significant non-aroma of saltiness. There is acidity from the relish, pickles and chili pepper.
+										 Lastly, the hotdog makes the flavor profile spicy, fat and full-bodied,
+										  but the profile ranks low on sweetness and bitterness.
+										</b>
+									</p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a target="_blank" class="image"><img src="images/meatballs.jpg" alt="" data-position="top center" /></a>
+							<div class="content" tabindex="7">
+								<div class="inner">
+									<h2>Example with Swedish meatballs</h2>
+									<p><b>The top 3 wines for Swedish meatballs:</b>
+										<ol>
+											<!-- <li><b>Californian Chardonnay</b> - White, dry Chardonnay wine from California (USA).<br>...<br></li> -->
+											<li>
+												Sauvignon Blanc, San Antonio Valley, Aconcagua, Chile<br></li>
+											<li>
+											<!-- <b>Argentinian Malbec</b> - Red, dry and oaked Malbec wine from Salta (Argentina).<br> ...<br></li> -->
+												Red Blends, Red Blends, Macedonia, Greece<br></li>
+											<li>
+											<!-- <b>German Riesling</b> - White, dry, or medium-dry Riesling wine from Mosel-Saar-Ruwer (Germany).<br>...<br></li> -->
+												Gruner Veltliner, Niederosterreich, Austria<br>
+											</li>
+										</ol>
+									</p>
+									<!-- <ul class="actions">
+										<li><a href="https://github.com/NakulLakhotia/Understanding-Customer-Pain-Points-Using-Text-Mining" target="_blank" class="button">Project</a></li>
+										<li><a href="https://drive.google.com/file/d/1F6zbdgQKJLmgvviu_klfDnHQeIih_M7P/view?usp=sharing" target="_blank" class="button">Project Report</a></li>
+									</ul> -->
+								</div>
+							</div>
+						</section>
+						<section>
+							<a class="image"><img src="images/system1.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content" tabindex="8">
+								<div class="inner">
+									<h2>Find Systembolaget near you</h2>
+									<p><b>
+										Systembolaget is a state-owned company with a statutory monopoly of alcohol in Sweden. 
+										Consequently, it's not evident what one should search for when trying to find liquor stores 
+										in a given location in Sweden.
+										<br><br>We will help you find the closest Systembolaget based on your location.
+										 You need to allow location sharing by accepting the popup that appears after pressing the button in the section below.
+										 We will then help you find the top 3 closest Systembolaget to you, 
+										 allowing you to save time and plan your perfect dinner efficiently.
+										</b>
+									</p>
+									<ul class="actions">
+										<li><a href="#two" class="button">Try it out!</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+				<section id="two" class="wrapper style3 fade-up"  tabindex="9">
+				<!-- <section id="two" class="wrapper style2 spotlights"> -->
+					<div id="two_inner" class="inner">
+					<a class="image right"><img src="images/transparent_all_wines.png" id="wine_type_image" alt="" data-position="top center"/></a>
+						<h2>Food-wine pairing</h2>
+						<div>
+							<form onsubmit="getInputValue();return false">
+								<!-- <div id = "pairing_div"> -->
+									<p>Select your wine type and meal, then press search!</p>
+									<input type="radio" id="allWines" onclick="allWinesSelected()" name="wine_type" value="allWines" checked>
+									<label for="allWines">All wines</label>
+									<input type="radio" id="redWines" onclick="redWinesSelected()" name="wine_type" value="redWines">
+									<label for="redWines">Red wines only</label>
+									<input type="radio" id="whiteWines" onclick="whiteWinesSelected()" name="wine_type" value="whiteWines">
+									<label for="whiteWines">White wines only</label>
+									<br><br>
+
+									<div class="field half">
+										<select name="meals" id="meal_selection" tabindex="10">
+											<option value ="baba ganoush">Baba ganoush</option>
+											<option value ="biryani">Biryani</option>
+											<option value ="bolognese">Bolognese</option>
+											<option value ="burger">Burger</option>
+											<option value ="carbonara">Carbonara</option>
+											<option value ="cheeseburger">Cheeseburger</option>
+											<option value ="chicago-style hotdog">Chicago-style hotdog</option>
+											<option value ="chicken soup">Chicken soup</option>
+											<option value ="couscous">Couscous</option>
+											<option value ="cupcake">Cupcake</option>
+											<option value ="duck">Duck</option>
+											<option value ="dumplings">Dumplings</option>
+											<option value ="fried chicken">Fried chicken</option>
+											<option value ="fried rice">Fried rice</option>
+											<option value ="garlic soup">Garlic soup</option>
+											<option value ="greek chicken stew">Greek chicken stew</option>
+											<option value ="halloumi burger">Halloumi burger</option>
+											<option value ="mac and cheese">Mac and cheese</option>
+											<option value ="macaroni pudding">Macaroni pudding</option>
+											<option value ="meatballs">Meatballs</option>
+											<option value ="moussaka">Moussaka</option>
+											<option value ="mutabal">Mutabal</option>
+											<option value ="noodle soup">Noodle soup</option>
+											<option value ="noodle wok ">Noodle wok </option>
+											<option value ="pancakes">Pancakes</option>
+											<option value ="pasta pesto">Pasta pesto</option>
+											<option value ="hawaii">Pizza Hawaii</option>
+											<option value ="margherita">Pizza Margherita</option>
+											<option value ="peperoni pizza">Pizza Peperoni</option>
+											<option value ="vesuvio">Pizza Vesuvio</option>
+											<option value ="pommes frites">Pommes frites</option>
+											<option value ="pork stew">Pork stew</option>
+											<option value ="pyttipanna">Pyttipanna</option>
+											<option value ="ramen">Ramen</option>
+											<option value ="roast chicken">Roast chicken</option>
+											<option value ="shepherds pie">Shepherds pie</option>
+											<option value ="skagenröra">Skagenröra</option>
+											<option value ="smörgåsbord">Smörgåsbord</option>
+											<option value ="soba noodles">Soba noodles</option>
+											<option value ="sushi">Sushi</option>
+											<option value ="swedish meatballs">Swedish meatballs</option>
+											<option value ="tamal">Tamal</option>
+											<option value ="tenderloin pasta">Tenderloin pasta</option>
+											<option value ="tikka masala">Tikka masala</option>
+											<option value ="tomato soup">Tomato soup</option>
+											<option value ="waffles">Waffles</option>
+											<option value ="wagashi">Wagashi</option>
+												</select>
+												<br>
+												<p>You can either select any of the available meals above, 
+													or search for your own meal by entering individual ingredients in the text field below.
+														If no ingredients are entered in the text field, the selected meal above will be searched for.</p>
+												<input type="text" name = "meals" placeholder="pasta,tomato,cheese,ham" id="mealInput" size="50" tabindex="11"><br>
+											<button type="button" id="findMealBtn" onclick="getInputValue();" tabindex="12">Search</button>
+											</div>
+											<div id="pairing_div"></div>
+										<!-- </div> -->
+									</form> <hr>
+
+									<h2>Find Systembolaget near you</h2>
+									<p>Search via geolocation or using the free text field below!
+								</div>
+
+								<div class="split style2">
+								<!-- <div> -->
+									<section>
+										<form onsubmit="findBasedOnLocation();return false">
+											<div class="field half">
+											<button type="button" onclick="findBasedOnLocation();" tabindex="13">Find via geolocation</button>
+											<!-- <br><br> -->
+										</form>
+									</section>
+
+								<section>
+									<form onsubmit="findBasedOnInput();return false">
+										<div class="field half locationInput">
+											<div class ="inputButton">
+												<input type="text" name = "location" placeholder="Gottsunda Uppsala" id="locationInput" tabindex="14">
+												<!-- <div class ="inputButton2"> -->
+													<button type="button" id="findBasedOnInputBtn" onclick="findBasedOnInput();" tabindex="15">Find</button>
+												<!-- </div> -->
+											</div>
+										</div>
+									</form>
+								</section>
+							</div>
+						</section>
+
+						<!-- Three -->	
+						<section id="three" class="wrapper style2 spotlights" tabindex="16">
+								<section>
+							<a class="image"><img src="images/dineandwine.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Blog page</h2>
+									<p>
+										<b>2022-04-25</b><br>The search time for our food-wine-pairing algorithm has been decreased. 
+										We have added ~50 meals that you can select from in a dropdown list. These meals provide fast 
+										lookups, while searching for advanced meals with specific ingredients will take a few seconds. 
+										We have also added a filter for only searching for red / white wines.
+										<br> 
+										<br> 
+										<b>2022-04-20</b><br>The food-wine-pairing algorithm is now implemented. 
+										It's rather slow as of now, but the performance will be improved during our next sprint release. 
+										In the next release, we will also include pairings based on recommendations from professional chefs.
+										<br> 
+										<br> 
+										<b>2022-04-19</b><br>We are currently working on our pairing algorithm for food and wine. 
+										The algorithm will be based on Natural Language Processing, 
+										as well as recommendations from famous chefs around the world.
+										<br> 
+										<br> 
+										<b>2022-04-12</b><br>We now have a Systembolaget store finder implemented on our site. 
+										You can try it out above by pressing the button "Find via geolocation". 
+										You will then need to accept the popup that allows us to find the top 
+										3 stores closest to your location.
+									</p>
+							</div>
+						</section>
+					</section>
+
+				<!-- Four -->
+					<section id="four" class="wrapper style1 fade-up" tabindex="17">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>We would love to hear from you!</p>
+							<div class="split style1">
+								<section>
+									<form method="post" action="mailto:dineandwinesweden@gmail.com">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" tabindex="18"/>
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" tabindex="19"/>
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a class="button submit" tabindex="20">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>Kyrkogårdsgatan 10 <br />753 13<br />
+											Uppsala<br />
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="mailto:dineandwinesweden@gmail.com">dineandwinesweden@gmail.com</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>+46-XXXXXXX</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+
+												<li><a href="https://twitter.com/DineandWineSV" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<!-- <li><a href="https://www.linkedin.com/in/dineandwinesweden/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+												<!-- <li><a href="https://github.com/NakulLakhotia?tab=repositories" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
+												<!-- <li><a href="https://www.hackerrank.com/nakullakhotia?hr_r=1" target="_blank" class="icon brands fa-hackerrank"><span class="label">HackerRank</span></a></li> -->
+												<li><a href="https://instagram.com/dineandwinesweden" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="https://www.facebook.com/dineandwinesweden/" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+			</div>
+	
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
